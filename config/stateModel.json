@@ -1,0 +1,13 @@
+{
+    "raised": { 
+      "transitions": ["open", "rejected"]
+    },
+    "open": { 
+      "transitions": ["in progress"]
+    },
+    "rejected": {},
+    "in progress": {
+      "transitions": ["done", "open"]
+    },
+    "done": {}
+}
