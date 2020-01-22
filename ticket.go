@@ -14,7 +14,7 @@ var (
 func (t *Ticket) Transition(sm StateModel, target string) error {
 	log.Debug("transitioning ticket")
 	log.WithFields(log.Fields{
-		"ticket":  t.Title,
+		"ticket":  t.ID,
 		"current": t.State,
 		"target":  target,
 	}).Info("transitioning ticket")

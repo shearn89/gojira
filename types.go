@@ -11,6 +11,7 @@ type StateModel map[string]State
 
 // Ticket - a simple ticket representation.
 type Ticket struct {
-	Title string
-	State string
+	ID    int    `json:"id"`
+	Title string `json:"title"`
+	State string `json:"state"`
 }

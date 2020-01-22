@@ -1,6 +1,7 @@
 {
     "raised": { 
-      "transitions": ["open", "rejected"]
+      "transitions": ["open", "rejected"],
+      "initial": true
     },
     "open": { 
       "transitions": ["in progress"]
